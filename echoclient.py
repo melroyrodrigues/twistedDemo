@@ -18,7 +18,7 @@ class EchoFactory(protocol.ClientFactory):
         return EchoClient()
 
     def clientConnectionFailed(self, connector, reason):
-        print "Connection failed."
+        print "Connection  failed."
         reactor.stop()
 
     def clientConnectionLost(self, connector, reason):
